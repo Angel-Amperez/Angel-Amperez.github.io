@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1 {font-family: "Raleway", Arial, sans-serif}
+h1 {letter-spacing: 6px}
+.w3-row-padding img {margin-bottom: 12px}
+  /* Hide all content by default */
+  .content-box { display: none; }
+</style>
+</head>
+<body>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-content" style="max-width:1500px">
+
+<!-- Header -->
+<header class="w3-panel w3-center w3-opacity" style="padding:128px 16px">
+  <h1 class="w3-xlarge">Actor</h1>
+  <h1>Angel Amperez</h1>
+  
+<!-- Navigation Bar -->
+<div class="w3-bar w3-black">
+  <button class="w3-bar-item w3-button" onclick="openContent(event, 'Home')">Home</button>
+  <button class="w3-bar-item w3-button" onclick="openContent(event, 'Portfolio')">Portfolio</button>
+  <button class="w3-bar-item w3-button" onclick="openContent(event, 'Contact')">Contact</button>
+</div>
+
+<!-- Content Sections -->
+<div id="Home" class="w3-container content-box w3-animate-opacity" style="display:block">
+  <h3>Headshots</h3>
+
+<!-- Photo Grid -->
+<div class="w3-row-padding w3-grayscale" style="margin-bottom:128px">
+  <div class="w3-half">
+    <img src="/main/images/May2026.jpg" style="width:100%">
+    <img src="/main/images/_MG_6215.jpg" style="width:100%">
+  </div>
+  <div class="w3-half">
+    <img src="/main/images/January2026.jpg" style="width:100%">
+    <img src="/main/images/_MG_6272.jpg" style="width:100%">
+  </div>
+</div>
+  
+<!-- End Page Content -->
+</div>
+
+<div id="Portfolio" class="w3-container content-box w3-animate-opacity">
+  <h3>Portfolio</h3>
+  <p>See some of my work on Youtube!</p>
+  <a href="https://www.youtube.com/watch?v=eiosGAu5zOk&list=PL4vMr8MOaTp845nIXQlY8Kr0HGyWje7YK&pp=sAgC" target="_blank" class="w3-hover-text-green">Youtube Portfolio Playlist</a></p>
+</div>
+
+<div id="Contact" class="w3-container content-box w3-animate-opacity">
+  <h3>Contact</h3>
+  <p>Get in touch with me!</p>
+  <p>Cellphone: 301-310-7587.</p>
+  <p>Work Email: angel.amperez558@gmail.com.</p>
+</div>
+
+<script>
+function openContent(evt, contentName) {
+  var i, x, tablinks;
+  // Hide all elements with class="content-box"
+  x = document.getElementsByClassName("content-box");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  // Show the specific tab content
+  document.getElementById(contentName).style.display = "block";
+}
+</script>
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-large"> 
+  <i class="fa fa-facebook-official w3-hover-opacity"></i>
+  <i class="fa fa-instagram w3-hover-opacity"></i>
+  <i class="fa fa-snapchat w3-hover-opacity"></i>
+  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+  <i class="fa fa-twitter w3-hover-opacity"></i>
+  <i class="fa fa-linkedin w3-hover-opacity"></i>
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+
+</body>
+</html>
